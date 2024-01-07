@@ -1,4 +1,5 @@
-This is the repository for the code files of the Dynamic Programming and Optimal Control lecture at ETH Zurich taught by Prof. Raffaello D'Andrea. The lecture covered the following topics
+This is the repository for the code files of the **Dynamic Programming and Optimal Control** [**Example**](http://example.com)
+lecture at the [Institute for Dynamic Systems and Control](https://idsc.ethz.ch) at ETH Zurich taught by Prof. Raffaello D'Andrea. The lecture covered the following topics
 
 - Dynamic Programming Algorithm
 - Deterministic Systems and Shortest Path Problems
