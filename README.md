@@ -1,1 +1,12 @@
-This is the repository for the code files of Dynamic Programming and Optimal Control at ETH Zurich. 
+This is the repository for the code files of the Dynamic Programming and Optimal Control lecture at ETH Zurich taught by Prof. Raffaello D'Andrea. The lecture covered the following topics
+
+- Dynamic Programming Algorithm
+- Deterministic Systems and Shortest Path Problems
+- Infinite Horizon Problems, Bellman Equation
+- Deterministic Continuous-Time Optimal Control
+
+The repository contains a folder with the code to the problem sets as well as the the code to the (optional) capstone project, where all of the theoretical knowledge of the lecture had to be applied. 
+
+
+
+
