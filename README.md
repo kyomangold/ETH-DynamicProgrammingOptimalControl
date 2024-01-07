@@ -1,4 +1,4 @@
-#Dynamic Programming and Optimal Control
+# Dynamic Programming and Optimal Control
 
 This is the repository for the code files of the **Dynamic Programming and Optimal Control** lecture at the [Institute for Dynamic Systems and Control](https://idsc.ethz.ch) at ETH Zurich taught by Prof. Raffaello D'Andrea. The lecture covered the following topics
 
