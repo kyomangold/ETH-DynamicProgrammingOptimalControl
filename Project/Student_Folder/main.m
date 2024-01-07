@@ -94,7 +94,6 @@ SolutionImplemented = false;
 %% Compute the terminal state index
 global TERMINAL_STATE_INDEX
 if terminalStateIndexImplemented
-    % TODO: Question a)
     TERMINAL_STATE_INDEX = ComputeTerminalStateIndex(stateSpace, map);
 end                  
 %% Compute transition probabilities
@@ -105,8 +104,7 @@ if transitionProbabilitiesImplemented
     % The transition probability matrix has the dimension (K x K x L), i.e.
     % the entry P(i, j, l) representes the transition probability from state i
     % to state j if control input l is applied.
-    
-    % TODO: Question b)
+
     P = ComputeTransitionProbabilities(stateSpace, map);
 end
 
@@ -118,17 +116,20 @@ if stageCostsImplemented
     % The stage cost matrix has the dimension (K x L), i.e. the entry G(i, l)
     % represents the cost if we are in state i and apply control input l.
     
-    % TODO: Question c)
     G = ComputeStageCosts(stateSpace, map);
 end
 
 %% Solve stochastic shortest path problem
-% Solve the stochastic shortest path problem
 if SolutionImplemented
     disp('Solve stochastic shortest path problem');
     
-    % TODO: Question d)
-    [ J_opt, u_opt_ind ] = Solution(P, G);
+    %% Choose between Policy Iteration, Value Iteration and Linear Programming by (un-)commenting the lines accordingly
+    % Policy Iteration
+    [ J_opt, u_opt_ind ] = PolicyIteration(P, G);
+    % Value Iteration 
+    % [ J_opt, u_opt_ind ] = ValueIteration(P, G);
+    % Linear Programming
+    % [ J_opt, u_opt_ind ] = LinearProgramming(P, G);
     
     if size(J_opt,1)~=K || size(u_opt_ind,1)~=K
         disp('[ERROR] the size of J and u must be K')
